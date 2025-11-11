@@ -1,0 +1,50 @@
+*PPD-Adobe: "4.3"
+*FormatVersion: "4.3"
+*FileVersion: "1.0"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "xprinter.ppd"
+*Manufacturer: "Xprinter"
+*Product: "(Xprinter Thermal Printer)"
+*ModelName: "Xprinter ESC/POS Thermal Printer"
+*ShortNickName: "Xprinter ESC/POS"
+*NickName: "Xprinter ESC/POS Thermal Printer"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*% Basic Device Capabilities
+*cupsFilter: "application/vnd.cups-raster 50 rastertolabel"
+*cupsFilter2: "application/vnd.cups-pdf application/pdf 50 pdftopdf"
+*cupsFilter2: "application/vnd.cups-postscript application/vnd.cups-raster 50 pstoraster"
+*cupsManualCopies: False
+*% Page Size
+*OpenUI *PageSize: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: 80x297mm
+*PageSize 58x297mm/58mm Paper: "<</PageSize[164.4 841.68]/ImagingBBox null>>setpagedevice"
+*PageSize 80x297mm/80mm Paper: "<</PageSize[226.8 841.68]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: 80x297mm
+*PageRegion 58x297mm/58mm Paper: "<</PageSize[164.4 841.68]/ImagingBBox null>>setpagedevice"
+*PageRegion 80x297mm/80mm Paper: "<</PageSize[226.8 841.68]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+*DefaultImageableArea: 80x297mm
+*ImageableArea 58x297mm/58mm Paper: "0.0 0.0 164.4 841.68"
+*ImageableArea 80x297mm/80mm Paper: "0.0 0.0 226.8 841.68"
+*DefaultPaperDimension: 80x297mm
+*PaperDimension 58x297mm/58mm Paper: "164.4 841.68"
+*PaperDimension 80x297mm/80mm Paper: "226.8 841.68"
+*% Print Quality
+*OpenUI *cupsPrintQuality/Print Quality: PickOne
+*OrderDependency: 10 AnySetup *cupsPrintQuality
+*DefaultcupsPrintQuality: Normal
+*cupsPrintQuality Draft/Draft: "<</HWResolution[203 203]>>setpagedevice"
+*cupsPrintQuality Normal/Normal: "<</HWResolution[203 203]>>setpagedevice"
+*CloseUI: *cupsPrintQuality

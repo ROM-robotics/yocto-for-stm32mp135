@@ -1,0 +1,10 @@
+# Place your custom splash screen PNG files here
+# 
+# Required files (name pattern):
+# - ST30739_splash-480x272.png
+# - ST30739_splash-800x480.png  
+# - ST30739_splash-1024x600.png
+# - ST30739_splash-1280x720.png
+# - ST30739_splash-1920x1080.png
+#
+# You can add just the resolution you need, or all of them
